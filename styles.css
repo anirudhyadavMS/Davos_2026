@@ -354,6 +354,223 @@ header::before {
     content: "📍 ";
 }
 
+.event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.event-details-btn {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--alpine-blue);
+    transition: all 0.2s ease;
+}
+
+.event-card:hover .event-details-btn {
+    color: var(--swiss-red);
+    transform: translateX(4px);
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-completed {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.status-in-progress {
+    background: #FFF3E0;
+    color: #E65100;
+}
+
+.status-upcoming {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: var(--swiss-white);
+    margin: 3% auto;
+    padding: 0;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--swiss-red) 0%, #A82020 100%);
+    color: var(--swiss-white);
+    padding: 2rem;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.modal-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    padding-right: 2rem;
+    line-height: 1.3;
+}
+
+.modal-close {
+    color: var(--swiss-white);
+    font-size: 2.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.2s ease;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    transform: rotate(90deg);
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 2rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--snow-white);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 2px solid var(--light-gray);
+}
+
+.modal-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.modal-info-item strong {
+    font-size: 0.85rem;
+    color: var(--mountain-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+.modal-info-item span {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.modal-section {
+    margin-bottom: 2rem;
+}
+
+.modal-section h3 {
+    font-size: 1.4rem;
+    color: var(--swiss-red);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--swiss-red);
+}
+
+.modal-section p {
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+.modal-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-section ul li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+.modal-section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--swiss-red);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.recording-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--alpine-blue) 0%, var(--alpine-blue-light) 100%);
+    color: var(--swiss-white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+.recording-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(25, 118, 210, 0.4);
+}
+
 /* Empty State */
 .empty-state {
     text-align: center;
@@ -480,6 +697,15 @@ footer::before {
         flex-direction: column;
         text-align: center;
     }
+
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+
+    .modal-info {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
@@ -506,13 +732,45 @@ footer::before {
     .event-title {
         font-size: 1.2rem;
     }
+
+    .modal-content {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        min-height: 100vh;
+    }
+
+    .modal-header {
+        border-radius: 0;
+        padding: 1.5rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .modal-body {
+        padding: 1.5rem;
+        max-height: none;
+    }
+
+    .modal-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .event-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
 }
 
 /* Print Styles for Swiss Precision */
 @media print {
     .filters,
     footer,
-    .mountain-bg {
+    .mountain-bg,
+    .modal {
         display: none;
     }
 
@@ -520,5 +778,9 @@ footer::before {
         page-break-inside: avoid;
         box-shadow: none;
         border: 1px solid #ccc;
+    }
+
+    .event-details-btn {
+        display: none;
     }
 }
