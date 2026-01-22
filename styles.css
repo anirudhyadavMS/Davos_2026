@@ -1,14 +1,17 @@
 /* Swiss-Inspired Design for Davos 2026 */
 
 :root {
-    --swiss-red: #FF0000;
+    --swiss-red: #C62828;
+    --swiss-red-light: #D84848;
     --swiss-white: #FFFFFF;
-    --alpine-blue: #0051A5;
-    --snow-white: #F8FAFB;
-    --mountain-gray: #4A5568;
-    --dark-gray: #2D3748;
-    --light-gray: #E2E8F0;
-    --accent-gold: #C5A572;
+    --alpine-blue: #1976D2;
+    --alpine-blue-light: #42A5F5;
+    --snow-white: #F5F7FA;
+    --mountain-gray: #5A6C7D;
+    --dark-gray: #37474F;
+    --light-gray: #E8EEF3;
+    --accent-gold: #B8956A;
+    --soft-bg: #FAFBFC;
 }
 
 * {
@@ -62,10 +65,10 @@ body {
 
 /* Header - Swiss Style */
 header {
-    background: linear-gradient(135deg, var(--swiss-red) 0%, #CC0000 100%);
+    background: linear-gradient(135deg, var(--swiss-red) 0%, #A82020 100%);
     color: var(--swiss-white);
     padding: 3rem 0;
-    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(198, 40, 40, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -186,14 +189,14 @@ header::before {
     border-color: var(--swiss-red);
     color: var(--swiss-red);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(198, 40, 40, 0.15);
 }
 
 .filter-btn.active {
     background: var(--swiss-red);
     color: var(--swiss-white);
     border-color: var(--swiss-red);
-    box-shadow: 0 4px 16px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(198, 40, 40, 0.3);
 }
 
 /* Disclaimer - Swiss Neutrality Colors */
@@ -304,7 +307,7 @@ header::before {
 
 .event-card:hover {
     transform: translateX(8px);
-    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.12);
+    box-shadow: 0 8px 24px rgba(198, 40, 40, 0.12);
 }
 
 .event-card:hover::before {
