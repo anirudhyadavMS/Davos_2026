@@ -1,0 +1,1 @@
+Create a web app as a one stop solution for everything about Davos summit 2026. I want to track what all events are happening and who are the speakers what is the title. Let us start with a timetable view to track the summit
