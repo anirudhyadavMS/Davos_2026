@@ -92,6 +92,24 @@ const eventsData = [
         ],
         recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-mark-carney"
     },
+    {
+        id: 30,
+        date: "2026-01-20",
+        time: "18:30",
+        title: "Open Forum: Where Biology Meets Choice",
+        speaker: "Panel of Bioethicists and Scientists",
+        description: "Public discussion on bioethics, genetic engineering, and human choice in shaping our biological future",
+        location: "Open Forum Venue - Davos Platz",
+        status: "completed",
+        summary: "Open Forum session explored the ethical dimensions of modern biotechnology and genetic engineering. Panelists discussed how advances in biology are giving humans unprecedented choices about health, longevity, and human enhancement.",
+        highlights: [
+            "Explored ethical implications of CRISPR and gene editing",
+            "Discussed accessibility and equity in biotechnology",
+            "Debated the boundaries of human enhancement",
+            "Examined regulatory frameworks for emerging biotech"
+        ],
+        recordingLink: "https://www.weforum.org/open-forum/sessions/"
+    },
 
     // Day 2 - January 21, 2026 (Day 3 of WEF)
     {
@@ -111,6 +129,24 @@ const eventsData = [
             "Provided insights on US economic growth projections"
         ],
         recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/press-conference-scott-bessent"
+    },
+    {
+        id: 31,
+        date: "2026-01-21",
+        time: "09:30",
+        title: "Open Forum: Swipe Left on Reality",
+        speaker: "Technology and Communication Experts",
+        description: "Public discussion on AI's impact on human communication and authentic reality",
+        location: "Open Forum Venue - Davos Platz",
+        status: "completed",
+        summary: "This Open Forum session examined how AI and digital technologies are reshaping human communication, dating, social interactions, and our perception of reality. Experts discussed the tension between digital convenience and authentic human connection.",
+        highlights: [
+            "Explored AI's role in modern dating and relationships",
+            "Discussed the impact of social media algorithms on reality perception",
+            "Examined digital authenticity vs. curated online personas",
+            "Debated solutions for maintaining human connection in digital age"
+        ],
+        recordingLink: "https://www.weforum.org/open-forum/sessions/"
     },
     {
         id: 7,
@@ -206,6 +242,24 @@ const eventsData = [
     {
         id: 12,
         date: "2026-01-21",
+        time: "12:30",
+        title: "Open Forum: Understanding Quantum Reality",
+        speaker: "Quantum Physicists and Technology Leaders",
+        description: "Public session exploring quantum computing, quantum mechanics, and implications for technology and society",
+        location: "Open Forum Venue - Davos Platz",
+        status: "completed",
+        summary: "Experts made quantum physics accessible to the public, explaining quantum computing breakthroughs and their potential impact on cryptography, medicine, and artificial intelligence. The session bridged complex scientific concepts with practical applications.",
+        highlights: [
+            "Explained quantum computing in accessible terms",
+            "Discussed quantum encryption and cybersecurity implications",
+            "Explored potential medical and pharmaceutical applications",
+            "Timeline for quantum computing becoming mainstream"
+        ],
+        recordingLink: "https://www.weforum.org/open-forum/sessions/"
+    },
+    {
+        id: 32,
+        date: "2026-01-21",
         time: "13:00",
         title: "Conversation with Jamie Dimon",
         speaker: "Jamie Dimon, Chairman and CEO of JPMorgan Chase & Zanny Minton Beddoes, Editor-in-Chief of The Economist",
@@ -222,7 +276,7 @@ const eventsData = [
         recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/conversation-jamie-dimon"
     },
     {
-        id: 13,
+        id: 33,
         date: "2026-01-21",
         time: "13:30",
         title: "Conversation with Mohammad Mustafa",
@@ -240,7 +294,7 @@ const eventsData = [
         recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/conversation-mohammad-mustafa"
     },
     {
-        id: 14,
+        id: 34,
         date: "2026-01-21",
         time: "14:30",
         title: "Special Address by Donald J. Trump",
@@ -259,7 +313,7 @@ const eventsData = [
         recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-trump"
     },
     {
-        id: 15,
+        id: 35,
         date: "2026-01-21",
         time: "15:45",
         title: "Special Address by Javier Milei",
@@ -277,7 +331,7 @@ const eventsData = [
         recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-milei"
     },
     {
-        id: 16,
+        id: 36,
         date: "2026-01-21",
         time: "17:00",
         title: "Roundtable: AI Valuation and Productivity",
@@ -294,10 +348,28 @@ const eventsData = [
         ],
         recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/ai-valuation-roundtable"
     },
+    {
+        id: 37,
+        date: "2026-01-21",
+        time: "18:30",
+        title: "Open Forum: The Fragile Future of Antibiotics",
+        speaker: "Medical Researchers and Public Health Officials",
+        description: "Public discussion on antibiotic resistance crisis and the future of infectious disease treatment",
+        location: "Open Forum Venue - Davos Platz",
+        status: "completed",
+        summary: "This critical Open Forum session addressed the growing threat of antibiotic resistance. Experts warned that without urgent action, common infections could become untreatable, potentially returning humanity to a pre-antibiotic era.",
+        highlights: [
+            "Warned about rising antibiotic-resistant superbugs",
+            "Discussed decline in new antibiotic development",
+            "Explored alternative treatments and bacteriophage therapy",
+            "Called for global coordination on antibiotic stewardship"
+        ],
+        recordingLink: "https://www.weforum.org/open-forum/sessions/"
+    },
 
     // Day 3 - January 22, 2026 (Day 4 of WEF - Today)
     {
-        id: 17,
+        id: 38,
         date: "2026-01-22",
         time: "09:00",
         title: "Session: Trade Deals, Exports and Tariff Challenges",
@@ -310,7 +382,20 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 18,
+        id: 39,
+        date: "2026-01-22",
+        time: "09:30",
+        title: "Open Forum: Beyond Earth - The Next Space Race",
+        speaker: "Space Agency Leaders and Private Space Entrepreneurs",
+        description: "Public discussion on the new era of space exploration, commercialization, and human expansion beyond Earth",
+        location: "Open Forum Venue - Davos Platz",
+        status: "in-progress",
+        summary: "Session currently underway. Check back soon for summary and highlights.",
+        highlights: [],
+        recordingLink: null
+    },
+    {
+        id: 40,
         date: "2026-01-22",
         time: "10:30",
         title: "Panel Discussion: Global Economic Outlook with IMF",
@@ -323,7 +408,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 19,
+        id: 41,
         date: "2026-01-22",
         time: "12:00",
         title: "Session: Climate Finance and Green Transition",
@@ -336,7 +421,20 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 20,
+        id: 42,
+        date: "2026-01-22",
+        time: "12:30",
+        title: "Open Forum: Agricultural Evolution",
+        speaker: "Agricultural Scientists and Food Security Experts",
+        description: "Public session on transforming agriculture for sustainability, food security, and climate resilience",
+        location: "Open Forum Venue - Davos Platz",
+        status: "in-progress",
+        summary: "Session currently underway. Check back soon for summary and highlights.",
+        highlights: [],
+        recordingLink: null
+    },
+    {
+        id: 43,
         date: "2026-01-22",
         time: "14:00",
         title: "Roundtable: AI Ethics and Technology Regulation",
@@ -349,7 +447,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 21,
+        id: 44,
         date: "2026-01-22",
         time: "16:00",
         title: "Session: Tariff Impacts on Emerging Economies",
@@ -364,7 +462,7 @@ const eventsData = [
 
     // Day 4 - January 23, 2026 (Day 5 of WEF - Final Day)
     {
-        id: 22,
+        id: 45,
         date: "2026-01-23",
         time: "09:00",
         title: "Conversation with Gavin Newsom",
@@ -377,7 +475,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 23,
+        id: 46,
         date: "2026-01-23",
         time: "09:30",
         title: "Climate Hub Davos - Closing Session & Special Screening",
@@ -390,7 +488,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 24,
+        id: 47,
         date: "2026-01-23",
         time: "10:30",
         title: "Special Address by Friedrich Merz",
@@ -403,7 +501,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 25,
+        id: 48,
         date: "2026-01-23",
         time: "11:30",
         title: "Special Address by Isaac Herzog",
@@ -416,7 +514,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 26,
+        id: 49,
         date: "2026-01-23",
         time: "13:00",
         title: "Special Address by Kyriakos Mitsotakis",
@@ -429,7 +527,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 27,
+        id: 50,
         date: "2026-01-23",
         time: "14:00",
         title: "Special Address by Prabowo Subianto",
@@ -442,7 +540,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 28,
+        id: 51,
         date: "2026-01-23",
         time: "15:00",
         title: "Panel Discussion: Global Financial Leadership",
@@ -455,7 +553,7 @@ const eventsData = [
         recordingLink: null
     },
     {
-        id: 29,
+        id: 52,
         date: "2026-01-23",
         time: "16:30",
         title: "Closing Remarks: A Spirit of Dialogue - Summit Outcomes",
