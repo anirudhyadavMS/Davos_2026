@@ -18,7 +18,7 @@ const eventsData = [
             "Acknowledged increasing global fragmentation and need for multilateral cooperation",
             "Set the tone for addressing AI, climate change, and economic uncertainties"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/welcome-address"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 2,
@@ -36,7 +36,7 @@ const eventsData = [
             "Discussed strategic partnerships and trade agreements with multiple regions",
             "Addressed climate commitments and green technology leadership"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-ursula-von-der-leyen"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 3,
@@ -54,7 +54,7 @@ const eventsData = [
             "Emphasized importance of stable US-China relations for global economy",
             "Highlighted China's role in sustainable development"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-he-lifeng"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 4,
@@ -72,7 +72,7 @@ const eventsData = [
             "Discussed France's vision for technological sovereignty",
             "Emphasized importance of dialogue with all global powers"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-emmanuel-macron"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 5,
@@ -90,7 +90,7 @@ const eventsData = [
             "Discussed Canada's strategic minerals and clean energy initiatives",
             "Called for renewed North American economic cooperation"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-mark-carney"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 30,
@@ -108,7 +108,7 @@ const eventsData = [
             "Debated the boundaries of human enhancement",
             "Examined regulatory frameworks for emerging biotech"
         ],
-        recordingLink: "https://www.weforum.org/open-forum/sessions/"
+        recordingLink: "https://www.weforum.org/open-forum/"
     },
 
     // Day 2 - January 21, 2026 (Day 3 of WEF)
@@ -128,7 +128,7 @@ const eventsData = [
             "Addressed questions on US-China economic relations",
             "Provided insights on US economic growth projections"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/press-conference-scott-bessent"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 31,
@@ -146,7 +146,7 @@ const eventsData = [
             "Examined digital authenticity vs. curated online personas",
             "Debated solutions for maintaining human connection in digital age"
         ],
-        recordingLink: "https://www.weforum.org/open-forum/sessions/"
+        recordingLink: "https://www.weforum.org/open-forum/"
     },
     {
         id: 7,
@@ -164,7 +164,7 @@ const eventsData = [
             "Concerns about long-term industrial base degradation",
             "Assessment of Russian central bank's monetary policy effectiveness"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/russia-wartime-economy"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 8,
@@ -182,7 +182,7 @@ const eventsData = [
             "Discussed Egypt's economic reform progress",
             "Emphasized Egypt-Africa cooperation initiatives"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-el-sisi"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 9,
@@ -200,7 +200,7 @@ const eventsData = [
             "Assessment of European military readiness",
             "Balance between NATO integration and strategic autonomy"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/europe-defense"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 10,
@@ -218,7 +218,7 @@ const eventsData = [
             "Fink emphasized AI's potential to transform productivity and growth",
             "Conversation covered AI sovereignty and global competition"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/conversation-jensen-huang"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 11,
@@ -237,7 +237,7 @@ const eventsData = [
             "Challenges include global trade tensions and infrastructure needs",
             "Discussion on 'Make in India' initiative progress"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/india-economy-panel"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 12,
@@ -255,7 +255,7 @@ const eventsData = [
             "Explored potential medical and pharmaceutical applications",
             "Timeline for quantum computing becoming mainstream"
         ],
-        recordingLink: "https://www.weforum.org/open-forum/sessions/"
+        recordingLink: "https://www.weforum.org/open-forum/"
     },
     {
         id: 32,
@@ -273,7 +273,7 @@ const eventsData = [
             "Warned about geopolitical risks and trade fragmentation",
             "Addressed banking regulation and capital requirements"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/conversation-jamie-dimon"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 33,
@@ -291,7 +291,7 @@ const eventsData = [
             "Called for renewed international support for peace process",
             "Emphasized importance of economic stability for lasting peace"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/conversation-mohammad-mustafa"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 34,
@@ -310,7 +310,7 @@ const eventsData = [
             "Mentioned Greenland strategic importance controversially",
             "Highlighted housing affordability initiatives"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-trump"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 35,
@@ -328,7 +328,7 @@ const eventsData = [
             "Defended free-market reforms and deregulation agenda",
             "Addressed inflation reduction progress and challenges"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/special-address-milei"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 36,
@@ -346,7 +346,7 @@ const eventsData = [
             "Discussion of massive capital expenditures by tech companies",
             "Questions about timeline for AI ROI and economic impact"
         ],
-        recordingLink: "https://www.weforum.org/events/world-economic-forum-annual-meeting-2026/sessions/ai-valuation-roundtable"
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
     },
     {
         id: 37,
@@ -364,7 +364,7 @@ const eventsData = [
             "Explored alternative treatments and bacteriophage therapy",
             "Called for global coordination on antibiotic stewardship"
         ],
-        recordingLink: "https://www.weforum.org/open-forum/sessions/"
+        recordingLink: "https://www.weforum.org/open-forum/"
     },
 
     // Day 3 - January 22, 2026 (Day 4 of WEF - Today)
