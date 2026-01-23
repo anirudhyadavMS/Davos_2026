@@ -476,8 +476,28 @@ let currentFilter = 'all';
 function init() {
     renderTimetable(eventsData);
     setupEventListeners();
+    setupEventCardClickHandlers();
     displayDisclaimer();
     createModal();
+}
+
+// Setup click handlers for event cards using event delegation
+function setupEventCardClickHandlers() {
+    const timetableContainer = document.getElementById('timetable');
+
+    // Use event delegation on the timetable container
+    timetableContainer.addEventListener('click', (e) => {
+        // Find the closest event-card element
+        const eventCard = e.target.closest('.event-card');
+
+        if (eventCard) {
+            const eventId = parseInt(eventCard.getAttribute('data-event-id'));
+
+            if (eventId) {
+                window.openModal(eventId);
+            }
+        }
+    });
 }
 
 // Display disclaimer about session coverage
@@ -552,12 +572,18 @@ function createModal() {
     };
 }
 
-// Open modal with event details
-function openModal(eventId) {
+// Open modal with event details (exposed to global scope for onclick handlers)
+window.openModal = function(eventId) {
     const event = eventsData.find(e => e.id === eventId);
     if (!event) return;
 
-    const modal = document.getElementById('eventModal');
+    let modal = document.getElementById('eventModal');
+
+    if (!modal) {
+        createModal();
+        modal = document.getElementById('eventModal');
+        if (!modal) return;
+    }
 
     // Populate modal content
     document.getElementById('modalTitle').textContent = event.title;
@@ -599,8 +625,8 @@ function openModal(eventId) {
     document.body.style.overflow = 'hidden';
 }
 
-// Close modal
-function closeModal() {
+// Close modal (exposed to global scope)
+window.closeModal = function() {
     const modal = document.getElementById('eventModal');
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
@@ -654,7 +680,7 @@ function renderTimetable(events) {
             html += `
                 <div class="time-slot">
                     <div class="time-label">${event.time}</div>
-                    <div class="event-card ${statusClass}" onclick="openModal(${event.id})" style="cursor: pointer;">
+                    <div class="event-card ${statusClass}" data-event-id="${event.id}" style="cursor: pointer;">
                         <h4 class="event-title">${event.title}</h4>
                         <div class="event-speaker">${event.speaker}</div>
                         <p class="event-description">${event.description}</p>
