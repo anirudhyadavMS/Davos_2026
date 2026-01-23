@@ -2,9 +2,48 @@
 // Note: WEF hosts 200+ sessions but only major sessions are publicly detailed
 // Data compiled from official WEF sources and media coverage
 const eventsData = [
-    // Day 1 - January 20, 2026 (Day 2 of WEF - Meeting started Jan 19)
+    // Day 0 - January 19, 2026 (Opening Day of WEF Annual Meeting 2026)
     {
         id: 1,
+        date: "2026-01-19",
+        time: "10:00",
+        title: "Opening Concert with Jon Batiste",
+        speaker: "Jon Batiste, Musician and Composer & Børge Brende, WEF President and CEO",
+        description: "Davos 2026 opens with sound filling the Congress Hall, featuring musician and composer Jon Batiste, reflecting the meeting's theme of 'A Spirit of Dialogue'",
+        location: "Congress Hall",
+        status: "completed",
+        summary: "The 2026 Annual Meeting opened not with speeches, but with an extraordinary musical performance by Jon Batiste. This innovative opening set the tone for the week's emphasis on dialogue, connection, and shared humanity beyond traditional business and political discourse.",
+        highlights: [
+            "Historic opening format breaking from traditional speech-only ceremonies",
+            "Jon Batiste's performance emphasized universal human connection through music",
+            "Børge Brende's welcoming remarks emphasized 'A Spirit of Dialogue' theme",
+            "Set inclusive tone for week of global conversations"
+        ],
+        recordingLink: "https://www.weforum.org/videos/forum-live/"
+    },
+    {
+        id: 2,
+        date: "2026-01-19",
+        time: "18:30",
+        title: "Open Forum: Which 2050 Do We Want?",
+        speaker: "Panel of Climate Scientists, Policymakers, and Community Leaders",
+        description: "Public discussion exploring visions for 2050 and how today's choices on climate, technology, social justice shape our future. Focus on glaciers, climate innovation, and global risks",
+        location: "Open Forum Venue - Davos Platz",
+        status: "completed",
+        summary: "This powerful Open Forum session asked participants to envision the world of 2050 and recognize that our choices today are actively creating that future. The discussion centered on critical issues including glacier preservation, climate innovation in mountain regions, and the Global Risks Report 2025 findings about system fragmentation.",
+        highlights: [
+            "Glaciers cover only 10% of Earth yet sustain half of humanity - vanishing at alarming rates",
+            "Mountain regions becoming hubs of climate innovation with scientists racing to preserve ice",
+            "Two-thirds of experts anticipate fragmented global system by mid-century",
+            "Emphasized link between today's decisions and 2050 outcomes on sustainability and equity",
+            "Part of 'Visions of 2050: Tomorrow Starts Now' Open Forum series"
+        ],
+        recordingLink: "https://www.weforum.org/open-forum/"
+    },
+
+    // Day 1 - January 20, 2026 (Day 2 of WEF - Meeting started Jan 19)
+    {
+        id: 3,
         date: "2026-01-20",
         time: "10:30",
         title: "Welcome Address",
