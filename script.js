@@ -1936,8 +1936,73 @@ const eventsData = [
   }
 ];
 
+// Helper functions to extract metadata from events
+function getSessionType(title) {
+    if (title.startsWith('Special Address')) return 'Special Address';
+    if (title.startsWith('Open Forum')) return 'Open Forum';
+    if (title.startsWith('Panel Discussion')) return 'Panel Discussion';
+    if (title.startsWith('Session:')) return 'Session';
+    if (title.startsWith('Conversation')) return 'Conversation';
+    if (title.startsWith('Roundtable')) return 'Roundtable';
+    if (title.startsWith('Press Conference')) return 'Press Conference';
+    if (title.includes('Concert') || title.includes('Music')) return 'Concert/Performance';
+    if (title.includes('Closing')) return 'Closing Event';
+    return 'Other';
+}
+
+function getThemes(event) {
+    const text = (event.title + ' ' + event.description + ' ' + (event.summary || '')).toLowerCase();
+    const themes = [];
+    
+    if (text.match(/\b(ai|artificial intelligence|machine learning|deep learning|llm|agi|nvidia|microsoft|openai|anthropic)\b/)) themes.push('AI & Technology');
+    if (text.match(/\b(climate|environment|sustainability|green|carbon|renewable|glacier)\b/)) themes.push('Climate & Environment');
+    if (text.match(/\b(economy|economic|trade|tariff|gdp|growth|finance|investment|market|imf|bank)\b/)) themes.push('Economy & Trade');
+    if (text.match(/\b(geopolitic|war|defense|nato|security|conflict|military|russia|ukraine)\b/)) themes.push('Geopolitics & Security');
+    if (text.match(/\b(health|medical|biotech|antibiotic|genetic|biology)\b/)) themes.push('Healthcare & Biotech');
+    if (text.match(/\b(education|knowledge|learning|school)\b/)) themes.push('Education');
+    if (text.match(/\b(space|quantum|computing)\b/)) themes.push('Future Technologies');
+    if (text.match(/\b(cyber|internet|digital)\b/)) themes.push('Cybersecurity & Digital');
+    
+    return themes.length > 0 ? themes : ['General'];
+}
+
+function getCountry(speaker) {
+    if (!speaker) return 'Multinational';
+    
+    const speakerLower = speaker.toLowerCase();
+    
+    if (speakerLower.includes('president of france') || speakerLower.includes('macron')) return 'France';
+    if (speakerLower.includes('china') || speakerLower.includes('people\'s republic') || speakerLower.includes('he lifeng')) return 'China';
+    if (speakerLower.includes('united states') || speakerLower.includes('us treasury') || speakerLower.includes('california') || speakerLower.includes('trump') || speakerLower.includes('bessent') || speakerLower.includes('newsom')) return 'United States';
+    if (speakerLower.includes('canada') || speakerLower.includes('carney')) return 'Canada';
+    if (speakerLower.includes('egypt') || speakerLower.includes('el-sisi')) return 'Egypt';
+    if (speakerLower.includes('argentina') || speakerLower.includes('milei')) return 'Argentina';
+    if (speakerLower.includes('germany') || speakerLower.includes('merz')) return 'Germany';
+    if (speakerLower.includes('israel') || speakerLower.includes('herzog')) return 'Israel';
+    if (speakerLower.includes('greece') || speakerLower.includes('mitsotakis')) return 'Greece';
+    if (speakerLower.includes('indonesia') || speakerLower.includes('subianto')) return 'Indonesia';
+    if (speakerLower.includes('european commission') || speakerLower.includes('von der leyen') || speakerLower.includes('ecb') || speakerLower.includes('lagarde')) return 'European Union';
+    if (speakerLower.includes('india') || speakerLower.includes('vaishnaw')) return 'India';
+    if (speakerLower.includes('saudi arabia') || speakerLower.includes('al-falih')) return 'Saudi Arabia';
+    if (speakerLower.includes('palestinian') || speakerLower.includes('mustafa')) return 'Palestine';
+    if (speakerLower.includes('united nations') || speakerLower.includes('guterres')) return 'International';
+    if (speakerLower.includes('wto') || speakerLower.includes('imf') || speakerLower.includes('world economic forum') || speakerLower.includes('schwab')) return 'International';
+    
+    return 'Multinational';
+}
+
+// Enrich events with metadata
+eventsData.forEach(event => {
+    event.sessionType = getSessionType(event.title);
+    event.themes = getThemes(event);
+    event.country = getCountry(event.speaker);
+});
+
 // State management
-let currentFilter = 'all';
+let currentDayFilter = 'all';
+let currentSessionTypeFilter = 'all';
+let currentThemeFilter = 'all';
+let currentCountryFilter = 'all';
 
 // Initialize the application
 function init() {
@@ -1946,6 +2011,7 @@ function init() {
     setupEventCardClickHandlers();
     displayDisclaimer();
     createModal();
+    populateFilters();
 }
 
 // Setup click handlers for event cards using event delegation
@@ -2168,34 +2234,148 @@ function renderTimetable(events) {
 }
 
 // Filter events by day
-function filterEvents(day) {
-    currentFilter = day;
-
-    if (day === 'all') {
-        renderTimetable(eventsData);
-    } else {
-        const filteredEvents = eventsData.filter(event => event.date === day);
-        renderTimetable(filteredEvents);
+function filterEvents() {
+    let filteredEvents = eventsData;
+    
+    // Apply day filter
+    if (currentDayFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.date === currentDayFilter);
     }
+    
+    // Apply session type filter
+    if (currentSessionTypeFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.sessionType === currentSessionTypeFilter);
+    }
+    
+    // Apply theme filter
+    if (currentThemeFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.themes.includes(currentThemeFilter));
+    }
+    
+    // Apply country filter
+    if (currentCountryFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.country === currentCountryFilter);
+    }
+    
+    renderTimetable(filteredEvents);
+    updateFilterCounts();
+}
+
+// Populate dynamic filters
+function populateFilters() {
+    // Get unique values
+    const sessionTypes = [...new Set(eventsData.map(e => e.sessionType))].sort();
+    const allThemes = [...new Set(eventsData.flatMap(e => e.themes))].sort();
+    const countries = [...new Set(eventsData.map(e => e.country))].sort();
+    
+    // Populate session type filter
+    const sessionTypeFilter = document.getElementById('sessionTypeFilter');
+    sessionTypeFilter.innerHTML = '<option value="all">All Types</option>';
+    sessionTypes.forEach(type => {
+        const count = eventsData.filter(e => e.sessionType === type).length;
+        sessionTypeFilter.innerHTML += `<option value="${type}">${type} (${count})</option>`;
+    });
+    
+    // Populate theme filter
+    const themeFilter = document.getElementById('themeFilter');
+    themeFilter.innerHTML = '<option value="all">All Themes</option>';
+    allThemes.forEach(theme => {
+        const count = eventsData.filter(e => e.themes.includes(theme)).length;
+        themeFilter.innerHTML += `<option value="${theme}">${theme} (${count})</option>`;
+    });
+    
+    // Populate country filter
+    const countryFilter = document.getElementById('countryFilter');
+    countryFilter.innerHTML = '<option value="all">All Countries</option>';
+    countries.forEach(country => {
+        const count = eventsData.filter(e => e.country === country).length;
+        countryFilter.innerHTML += `<option value="${country}">${country} (${count})</option>`;
+    });
+}
+
+// Update filter counts based on current filters
+function updateFilterCounts() {
+    const resultCount = document.getElementById('resultCount');
+    let filteredEvents = eventsData;
+    
+    if (currentDayFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.date === currentDayFilter);
+    }
+    if (currentSessionTypeFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.sessionType === currentSessionTypeFilter);
+    }
+    if (currentThemeFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.themes.includes(currentThemeFilter));
+    }
+    if (currentCountryFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.country === currentCountryFilter);
+    }
+    
+    resultCount.textContent = `Showing ${filteredEvents.length} of ${eventsData.length} sessions`;
+}
+
+// Clear all filters
+function clearAllFilters() {
+    currentDayFilter = 'all';
+    currentSessionTypeFilter = 'all';
+    currentThemeFilter = 'all';
+    currentCountryFilter = 'all';
+    
+    // Reset UI
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector('.filter-btn[data-day="all"]').classList.add('active');
+    document.getElementById('sessionTypeFilter').value = 'all';
+    document.getElementById('themeFilter').value = 'all';
+    document.getElementById('countryFilter').value = 'all';
+    
+    filterEvents();
 }
 
 // Setup event listeners
 function setupEventListeners() {
+    // Day filter buttons
     const filterButtons = document.querySelectorAll('.filter-btn');
-
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
-
-            // Add active class to clicked button
             button.classList.add('active');
-
-            // Filter events
-            const day = button.getAttribute('data-day');
-            filterEvents(day);
+            currentDayFilter = button.getAttribute('data-day');
+            filterEvents();
         });
     });
+    
+    // Session type filter
+    const sessionTypeFilter = document.getElementById('sessionTypeFilter');
+    if (sessionTypeFilter) {
+        sessionTypeFilter.addEventListener('change', (e) => {
+            currentSessionTypeFilter = e.target.value;
+            filterEvents();
+        });
+    }
+    
+    // Theme filter
+    const themeFilter = document.getElementById('themeFilter');
+    if (themeFilter) {
+        themeFilter.addEventListener('change', (e) => {
+            currentThemeFilter = e.target.value;
+            filterEvents();
+        });
+    }
+    
+    // Country filter
+    const countryFilter = document.getElementById('countryFilter');
+    if (countryFilter) {
+        countryFilter.addEventListener('change', (e) => {
+            currentCountryFilter = e.target.value;
+            filterEvents();
+        });
+    }
+    
+    // Clear filters button
+    const clearFiltersBtn = document.getElementById('clearFilters');
+    if (clearFiltersBtn) {
+        clearFiltersBtn.addEventListener('click', clearAllFilters);
+    }
 }
 
 // Start the application when DOM is loaded
