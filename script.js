@@ -2234,7 +2234,7 @@ function renderTimetable(events) {
 }
 
 // Filter events by day
-function filterEvents() {
+function getFilteredEvents() {
     let filteredEvents = eventsData;
     
     // Apply day filter
@@ -2257,6 +2257,11 @@ function filterEvents() {
         filteredEvents = filteredEvents.filter(event => event.country === currentCountryFilter);
     }
     
+    return filteredEvents;
+}
+
+function filterEvents() {
+    const filteredEvents = getFilteredEvents();
     renderTimetable(filteredEvents);
     updateFilterCounts();
 }
@@ -2296,21 +2301,7 @@ function populateFilters() {
 // Update filter counts based on current filters
 function updateFilterCounts() {
     const resultCount = document.getElementById('resultCount');
-    let filteredEvents = eventsData;
-    
-    if (currentDayFilter !== 'all') {
-        filteredEvents = filteredEvents.filter(event => event.date === currentDayFilter);
-    }
-    if (currentSessionTypeFilter !== 'all') {
-        filteredEvents = filteredEvents.filter(event => event.sessionType === currentSessionTypeFilter);
-    }
-    if (currentThemeFilter !== 'all') {
-        filteredEvents = filteredEvents.filter(event => event.themes.includes(currentThemeFilter));
-    }
-    if (currentCountryFilter !== 'all') {
-        filteredEvents = filteredEvents.filter(event => event.country === currentCountryFilter);
-    }
-    
+    const filteredEvents = getFilteredEvents();
     resultCount.textContent = `Showing ${filteredEvents.length} of ${eventsData.length} sessions`;
 }
 
