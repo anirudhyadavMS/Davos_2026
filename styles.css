@@ -199,6 +199,135 @@ header::before {
     box-shadow: 0 4px 16px rgba(198, 40, 40, 0.3);
 }
 
+/* Filters Container */
+.filters-container {
+    background: var(--swiss-white);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.filter-section {
+    margin-bottom: 2rem;
+}
+
+.filter-section:last-child {
+    margin-bottom: 0;
+}
+
+.filter-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-title::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: var(--swiss-red);
+    border-radius: 2px;
+}
+
+/* Advanced Filters Grid */
+.advanced-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--mountain-gray);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-icon {
+    font-size: 1.2rem;
+}
+
+.filter-select {
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    background: var(--snow-white);
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235A6C7D' d='M1.41 0L6 4.59L10.59 0L12 1.41l-6 6l-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+}
+
+.filter-select:hover {
+    border-color: var(--alpine-blue);
+    background-color: var(--swiss-white);
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--swiss-red);
+    box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.1);
+}
+
+.clear-filters-btn {
+    padding: 0.875rem 1.5rem;
+    background: var(--light-gray);
+    color: var(--dark-gray);
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+.clear-filters-btn:hover {
+    background: var(--swiss-red);
+    color: var(--swiss-white);
+    border-color: var(--swiss-red);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(198, 40, 40, 0.2);
+}
+
+/* Results Info */
+.results-info {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #F0F4F8 0%, #E8EEF3 100%);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#resultCount {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--mountain-gray);
+}
+
 /* Disclaimer - Swiss Neutrality Colors */
 .disclaimer {
     background: linear-gradient(135deg, #FFF9F0 0%, #FFFCF8 100%);
@@ -691,6 +820,14 @@ footer::before {
 
     .filter-btn {
         width: 100%;
+    }
+    
+    .advanced-filters {
+        grid-template-columns: 1fr;
+    }
+    
+    .filters-container {
+        padding: 1.5rem;
     }
 
     .footer-content {

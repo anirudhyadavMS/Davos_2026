@@ -18,7 +18,7 @@ const eventsData = [
       "Børge Brende's welcoming remarks emphasized 'A Spirit of Dialogue' theme",
       "Set inclusive tone for week of global conversations"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=5p2CTWLs0Nw"
   },
   {
     "id": 2,
@@ -54,7 +54,7 @@ const eventsData = [
       "Acknowledged increasing global fragmentation and need for multilateral cooperation",
       "Set the tone for addressing AI, climate change, and economic uncertainties"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.weforum.org/videos/klaus-schwab-2026/"
   },
   {
     "id": 2,
@@ -72,7 +72,7 @@ const eventsData = [
       "Discussed strategic partnerships and trade agreements with multiple regions",
       "Addressed climate commitments and green technology leadership"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=YWFz70Lwsog"
   },
   {
     "id": 3,
@@ -90,7 +90,7 @@ const eventsData = [
       "Emphasized importance of stable US-China relations for global economy",
       "Highlighted China's role in sustainable development"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=mCWBEKCKOdE"
   },
   {
     "id": 4,
@@ -108,7 +108,7 @@ const eventsData = [
       "Discussed France's vision for technological sovereignty",
       "Emphasized importance of dialogue with all global powers"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=YmyMfK7YS7E"
   },
   {
     "id": 5,
@@ -126,7 +126,7 @@ const eventsData = [
       "Discussed Canada's strategic minerals and clean energy initiatives",
       "Called for renewed North American economic cooperation"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=flsgJe8mN-A"
   },
   {
     "id": 30,
@@ -162,7 +162,7 @@ const eventsData = [
       "Addressed questions on US-China economic relations",
       "Provided insights on US economic growth projections"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=AY6BK-ZOQ6M"
   },
   {
     "id": 31,
@@ -198,7 +198,7 @@ const eventsData = [
       "Concerns about long-term industrial base degradation",
       "Assessment of Russian central bank's monetary policy effectiveness"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.weforum.org/meetings/world-economic-forum-annual-meeting-2026/sessions/can-russia-sustain-a-wartime-economy/"
   },
   {
     "id": 8,
@@ -216,7 +216,7 @@ const eventsData = [
       "Discussed Egypt's economic reform progress",
       "Emphasized Egypt-Africa cooperation initiatives"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=WQ3uABFKj3E"
   },
   {
     "id": 9,
@@ -234,7 +234,7 @@ const eventsData = [
       "Assessment of European military readiness",
       "Balance between NATO integration and strategic autonomy"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=jzbLH2GajL0"
   },
   {
     "id": 10,
@@ -252,7 +252,7 @@ const eventsData = [
       "Fink emphasized AI's potential to transform productivity and growth",
       "Conversation covered AI sovereignty and global competition"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=eqpkLUUDvNg"
   },
   {
     "id": 11,
@@ -271,7 +271,7 @@ const eventsData = [
       "Challenges include global trade tensions and infrastructure needs",
       "Discussion on 'Make in India' initiative progress"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.weforum.org/videos/india-economy-2028/"
   },
   {
     "id": 12,
@@ -307,7 +307,7 @@ const eventsData = [
       "Warned about geopolitical risks and trade fragmentation",
       "Addressed banking regulation and capital requirements"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=hnLTD4D4wxY"
   },
   {
     "id": 33,
@@ -325,7 +325,7 @@ const eventsData = [
       "Called for renewed international support for peace process",
       "Emphasized importance of economic stability for lasting peace"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=SLd2GrjbSeg"
   },
   {
     "id": 34,
@@ -344,7 +344,7 @@ const eventsData = [
       "Mentioned Greenland strategic importance controversially",
       "Highlighted housing affordability initiatives"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=r9YdMzYAN84"
   },
   {
     "id": 35,
@@ -362,7 +362,7 @@ const eventsData = [
       "Defended free-market reforms and deregulation agenda",
       "Addressed inflation reduction progress and challenges"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.youtube.com/watch?v=UaE65g1jOAs"
   },
   {
     "id": 36,
@@ -380,7 +380,7 @@ const eventsData = [
       "Discussion of massive capital expenditures by tech companies",
       "Questions about timeline for AI ROI and economic impact"
     ],
-    "recordingLink": "https://www.weforum.org/videos/forum-live/"
+    "recordingLink": "https://www.weforum.org/videos/ai-revenue-models/"
   },
   {
     "id": 37,
@@ -1936,8 +1936,73 @@ const eventsData = [
   }
 ];
 
+// Helper functions to extract metadata from events
+function getSessionType(title) {
+    if (title.startsWith('Special Address')) return 'Special Address';
+    if (title.startsWith('Open Forum')) return 'Open Forum';
+    if (title.startsWith('Panel Discussion')) return 'Panel Discussion';
+    if (title.startsWith('Session:')) return 'Session';
+    if (title.startsWith('Conversation')) return 'Conversation';
+    if (title.startsWith('Roundtable')) return 'Roundtable';
+    if (title.startsWith('Press Conference')) return 'Press Conference';
+    if (title.includes('Concert') || title.includes('Music')) return 'Concert/Performance';
+    if (title.includes('Closing')) return 'Closing Event';
+    return 'Other';
+}
+
+function getThemes(event) {
+    const text = (event.title + ' ' + event.description + ' ' + (event.summary || '')).toLowerCase();
+    const themes = [];
+    
+    if (text.match(/\b(ai|artificial intelligence|machine learning|deep learning|llm|agi|nvidia|microsoft|openai|anthropic)\b/)) themes.push('AI & Technology');
+    if (text.match(/\b(climate|environment|sustainability|green|carbon|renewable|glacier)\b/)) themes.push('Climate & Environment');
+    if (text.match(/\b(economy|economic|trade|tariff|gdp|growth|finance|investment|market|imf|bank)\b/)) themes.push('Economy & Trade');
+    if (text.match(/\b(geopolitic|war|defense|nato|security|conflict|military|russia|ukraine)\b/)) themes.push('Geopolitics & Security');
+    if (text.match(/\b(health|medical|biotech|antibiotic|genetic|biology)\b/)) themes.push('Healthcare & Biotech');
+    if (text.match(/\b(education|knowledge|learning|school)\b/)) themes.push('Education');
+    if (text.match(/\b(space|quantum|computing)\b/)) themes.push('Future Technologies');
+    if (text.match(/\b(cyber|internet|digital)\b/)) themes.push('Cybersecurity & Digital');
+    
+    return themes.length > 0 ? themes : ['General'];
+}
+
+function getCountry(speaker) {
+    if (!speaker) return 'Multinational';
+    
+    const speakerLower = speaker.toLowerCase();
+    
+    if (speakerLower.includes('president of france') || speakerLower.includes('macron')) return 'France';
+    if (speakerLower.includes('china') || speakerLower.includes('people\'s republic') || speakerLower.includes('he lifeng')) return 'China';
+    if (speakerLower.includes('united states') || speakerLower.includes('us treasury') || speakerLower.includes('california') || speakerLower.includes('trump') || speakerLower.includes('bessent') || speakerLower.includes('newsom')) return 'United States';
+    if (speakerLower.includes('canada') || speakerLower.includes('carney')) return 'Canada';
+    if (speakerLower.includes('egypt') || speakerLower.includes('el-sisi')) return 'Egypt';
+    if (speakerLower.includes('argentina') || speakerLower.includes('milei')) return 'Argentina';
+    if (speakerLower.includes('germany') || speakerLower.includes('merz')) return 'Germany';
+    if (speakerLower.includes('israel') || speakerLower.includes('herzog')) return 'Israel';
+    if (speakerLower.includes('greece') || speakerLower.includes('mitsotakis')) return 'Greece';
+    if (speakerLower.includes('indonesia') || speakerLower.includes('subianto')) return 'Indonesia';
+    if (speakerLower.includes('european commission') || speakerLower.includes('von der leyen') || speakerLower.includes('ecb') || speakerLower.includes('lagarde')) return 'European Union';
+    if (speakerLower.includes('india') || speakerLower.includes('vaishnaw')) return 'India';
+    if (speakerLower.includes('saudi arabia') || speakerLower.includes('al-falih')) return 'Saudi Arabia';
+    if (speakerLower.includes('palestinian') || speakerLower.includes('mustafa')) return 'Palestine';
+    if (speakerLower.includes('united nations') || speakerLower.includes('guterres')) return 'International';
+    if (speakerLower.includes('wto') || speakerLower.includes('imf') || speakerLower.includes('world economic forum') || speakerLower.includes('schwab')) return 'International';
+    
+    return 'Multinational';
+}
+
+// Enrich events with metadata
+eventsData.forEach(event => {
+    event.sessionType = getSessionType(event.title);
+    event.themes = getThemes(event);
+    event.country = getCountry(event.speaker);
+});
+
 // State management
-let currentFilter = 'all';
+let currentDayFilter = 'all';
+let currentSessionTypeFilter = 'all';
+let currentThemeFilter = 'all';
+let currentCountryFilter = 'all';
 
 // Initialize the application
 function init() {
@@ -1946,6 +2011,7 @@ function init() {
     setupEventCardClickHandlers();
     displayDisclaimer();
     createModal();
+    populateFilters();
 }
 
 // Setup click handlers for event cards using event delegation
@@ -2168,34 +2234,139 @@ function renderTimetable(events) {
 }
 
 // Filter events by day
-function filterEvents(day) {
-    currentFilter = day;
-
-    if (day === 'all') {
-        renderTimetable(eventsData);
-    } else {
-        const filteredEvents = eventsData.filter(event => event.date === day);
-        renderTimetable(filteredEvents);
+function getFilteredEvents() {
+    let filteredEvents = eventsData;
+    
+    // Apply day filter
+    if (currentDayFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.date === currentDayFilter);
     }
+    
+    // Apply session type filter
+    if (currentSessionTypeFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.sessionType === currentSessionTypeFilter);
+    }
+    
+    // Apply theme filter
+    if (currentThemeFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.themes.includes(currentThemeFilter));
+    }
+    
+    // Apply country filter
+    if (currentCountryFilter !== 'all') {
+        filteredEvents = filteredEvents.filter(event => event.country === currentCountryFilter);
+    }
+    
+    return filteredEvents;
+}
+
+function filterEvents() {
+    const filteredEvents = getFilteredEvents();
+    renderTimetable(filteredEvents);
+    updateFilterCounts();
+}
+
+// Populate dynamic filters
+function populateFilters() {
+    // Get unique values
+    const sessionTypes = [...new Set(eventsData.map(e => e.sessionType))].sort();
+    const allThemes = [...new Set(eventsData.flatMap(e => e.themes))].sort();
+    const countries = [...new Set(eventsData.map(e => e.country))].sort();
+    
+    // Populate session type filter
+    const sessionTypeFilter = document.getElementById('sessionTypeFilter');
+    sessionTypeFilter.innerHTML = '<option value="all">All Types</option>';
+    sessionTypes.forEach(type => {
+        const count = eventsData.filter(e => e.sessionType === type).length;
+        sessionTypeFilter.innerHTML += `<option value="${type}">${type} (${count})</option>`;
+    });
+    
+    // Populate theme filter
+    const themeFilter = document.getElementById('themeFilter');
+    themeFilter.innerHTML = '<option value="all">All Themes</option>';
+    allThemes.forEach(theme => {
+        const count = eventsData.filter(e => e.themes.includes(theme)).length;
+        themeFilter.innerHTML += `<option value="${theme}">${theme} (${count})</option>`;
+    });
+    
+    // Populate country filter
+    const countryFilter = document.getElementById('countryFilter');
+    countryFilter.innerHTML = '<option value="all">All Countries</option>';
+    countries.forEach(country => {
+        const count = eventsData.filter(e => e.country === country).length;
+        countryFilter.innerHTML += `<option value="${country}">${country} (${count})</option>`;
+    });
+}
+
+// Update filter counts based on current filters
+function updateFilterCounts() {
+    const resultCount = document.getElementById('resultCount');
+    const filteredEvents = getFilteredEvents();
+    resultCount.textContent = `Showing ${filteredEvents.length} of ${eventsData.length} sessions`;
+}
+
+// Clear all filters
+function clearAllFilters() {
+    currentDayFilter = 'all';
+    currentSessionTypeFilter = 'all';
+    currentThemeFilter = 'all';
+    currentCountryFilter = 'all';
+    
+    // Reset UI
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector('.filter-btn[data-day="all"]').classList.add('active');
+    document.getElementById('sessionTypeFilter').value = 'all';
+    document.getElementById('themeFilter').value = 'all';
+    document.getElementById('countryFilter').value = 'all';
+    
+    filterEvents();
 }
 
 // Setup event listeners
 function setupEventListeners() {
+    // Day filter buttons
     const filterButtons = document.querySelectorAll('.filter-btn');
-
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
-
-            // Add active class to clicked button
             button.classList.add('active');
-
-            // Filter events
-            const day = button.getAttribute('data-day');
-            filterEvents(day);
+            currentDayFilter = button.getAttribute('data-day');
+            filterEvents();
         });
     });
+    
+    // Session type filter
+    const sessionTypeFilter = document.getElementById('sessionTypeFilter');
+    if (sessionTypeFilter) {
+        sessionTypeFilter.addEventListener('change', (e) => {
+            currentSessionTypeFilter = e.target.value;
+            filterEvents();
+        });
+    }
+    
+    // Theme filter
+    const themeFilter = document.getElementById('themeFilter');
+    if (themeFilter) {
+        themeFilter.addEventListener('change', (e) => {
+            currentThemeFilter = e.target.value;
+            filterEvents();
+        });
+    }
+    
+    // Country filter
+    const countryFilter = document.getElementById('countryFilter');
+    if (countryFilter) {
+        countryFilter.addEventListener('change', (e) => {
+            currentCountryFilter = e.target.value;
+            filterEvents();
+        });
+    }
+    
+    // Clear filters button
+    const clearFiltersBtn = document.getElementById('clearFilters');
+    if (clearFiltersBtn) {
+        clearFiltersBtn.addEventListener('click', clearAllFilters);
+    }
 }
 
 // Start the application when DOM is loaded

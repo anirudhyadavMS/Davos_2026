@@ -33,13 +33,64 @@
             <p>January 19-23, 2026 | 200+ Sessions | 3,000+ Global Leaders | Swiss Time (CET)</p>
         </section>
 
-        <div class="filters">
-            <button class="filter-btn active" data-day="all">All Days</button>
-            <button class="filter-btn" data-day="2026-01-19">Day 0 - Jan 19</button>
-            <button class="filter-btn" data-day="2026-01-20">Day 1 - Jan 20</button>
-            <button class="filter-btn" data-day="2026-01-21">Day 2 - Jan 21</button>
-            <button class="filter-btn" data-day="2026-01-22">Day 3 - Jan 22</button>
-            <button class="filter-btn" data-day="2026-01-23">Day 4 - Jan 23</button>
+        <div class="filters-container">
+            <!-- Day Filters -->
+            <div class="filter-section">
+                <h3 class="filter-title">Filter by Day</h3>
+                <div class="filters">
+                    <button class="filter-btn active" data-day="all">All Days</button>
+                    <button class="filter-btn" data-day="2026-01-19">Day 0 - Jan 19</button>
+                    <button class="filter-btn" data-day="2026-01-20">Day 1 - Jan 20</button>
+                    <button class="filter-btn" data-day="2026-01-21">Day 2 - Jan 21</button>
+                    <button class="filter-btn" data-day="2026-01-22">Day 3 - Jan 22</button>
+                    <button class="filter-btn" data-day="2026-01-23">Day 4 - Jan 23</button>
+                </div>
+            </div>
+
+            <!-- Advanced Filters -->
+            <div class="filter-section">
+                <h3 class="filter-title">Advanced Filters</h3>
+                <div class="advanced-filters">
+                    <div class="filter-group">
+                        <label for="sessionTypeFilter">
+                            <span class="filter-icon">📋</span>
+                            Session Type
+                        </label>
+                        <select id="sessionTypeFilter" class="filter-select">
+                            <option value="all">All Types</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="themeFilter">
+                            <span class="filter-icon">🎯</span>
+                            Theme
+                        </label>
+                        <select id="themeFilter" class="filter-select">
+                            <option value="all">All Themes</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="countryFilter">
+                            <span class="filter-icon">🌍</span>
+                            Speaker Country/Region
+                        </label>
+                        <select id="countryFilter" class="filter-select">
+                            <option value="all">All Countries</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <button id="clearFilters" class="clear-filters-btn">Clear All Filters</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Counter -->
+            <div class="results-info">
+                <span id="resultCount">Showing all sessions</span>
+            </div>
         </div>
 
         <div id="timetable" class="timetable">
