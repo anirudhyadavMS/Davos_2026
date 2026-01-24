@@ -2043,7 +2043,7 @@ function displayDisclaimer() {
         Many smaller sessions, private roundtables, and bilateral meetings are not included in public schedules.</p>
         <p><strong>⏰ All times shown are in Swiss Time (CET - Central European Time, UTC+1)</strong></p>
     `;
-    document.querySelector('.container').insertBefore(disclaimer, document.getElementById('timetable'));
+    document.querySelector('main.container').insertBefore(disclaimer, document.getElementById('timetable'));
 }
 
 // Create modal structure
