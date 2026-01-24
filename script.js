@@ -603,6 +603,345 @@ const eventsData = [
         summary: "Coming soon. This session is scheduled for tomorrow.",
         highlights: [],
         recordingLink: null
+    },
+    // Additional sessions from WEF official schedule
+    {
+        id: 53,
+        date: "2026-01-20",
+        time: "07:15",
+        title: "Scaling AI: Now Comes the Hard Part",
+        speaker: "Panel of AI Leaders and Tech CEOs",
+        description: "Discussion on practical implementation challenges of AI at scale across industries",
+        location: "Congress Centre - AI Forum",
+        status: "completed",
+        summary: "Leading AI experts discussed the practical challenges of scaling artificial intelligence across industries. The session focused on real-world implementation issues, from data governance to workforce transformation.",
+        highlights: [
+            "Industry leaders shared experiences on AI deployment challenges",
+            "Discussion on balancing AI innovation with responsible governance",
+            "Focus on workforce adaptation and skills development",
+            "Emphasis on data quality and infrastructure requirements"
+        ],
+        recordingLink: "https://www.weforum.org/videos/scaling-ai/"
+    },
+    {
+        id: 54,
+        date: "2026-01-20",
+        time: "08:30",
+        title: "Conversation with Satya Nadella, CEO of Microsoft",
+        speaker: "Satya Nadella, Chairman and CEO, Microsoft",
+        description: "An intimate conversation with Microsoft's CEO on AI transformation, cloud computing, and the future of work",
+        location: "Congress Centre - Main Hall",
+        status: "completed",
+        summary: "Microsoft CEO Satya Nadella discussed the company's vision for AI-powered productivity, cloud infrastructure, and how technology can empower every person and organization to achieve more. The conversation covered Microsoft's approach to responsible AI development and global digital transformation.",
+        highlights: [
+            "Microsoft's commitment to democratizing AI through accessible tools",
+            "Discussion on Copilot and AI integration across Microsoft products",
+            "Focus on cybersecurity in an AI-driven world",
+            "Emphasis on responsible AI development and deployment"
+        ],
+        recordingLink: "https://www.weforum.org/videos/satya-nadella-2026/"
+    },
+    {
+        id: 55,
+        date: "2026-01-20",
+        time: "12:00",
+        title: "Town Hall: Dilemmas around Knowledge",
+        speaker: "Panel of Educators, Tech Leaders, and Policy Makers",
+        description: "Exploring challenges of knowledge creation, validation, and distribution in the age of AI and misinformation",
+        location: "Open Forum - Town Hall",
+        status: "completed",
+        summary: "This town hall addressed critical questions about knowledge in the digital age: How do we validate information? Who controls knowledge creation? How can we combat misinformation while preserving free speech? The session brought together diverse perspectives on education, media, and technology.",
+        highlights: [
+            "Debates on information verification in the AI era",
+            "Role of education systems in critical thinking development",
+            "Challenges of misinformation and deep fakes",
+            "Discussion on open access to knowledge versus proprietary systems"
+        ],
+        recordingLink: "https://www.weforum.org/videos/town-hall-knowledge/"
+    },
+    {
+        id: 56,
+        date: "2026-01-20",
+        time: "12:30",
+        title: "The Day After AGI",
+        speaker: "Sam Altman (OpenAI), Demis Hassabis (Google DeepMind), Dario Amodei (Anthropic)",
+        description: "Leading AI researchers discuss what happens when artificial general intelligence is achieved",
+        location: "Congress Centre - Technology Forum",
+        status: "completed",
+        summary: "In one of the most anticipated sessions of Davos 2026, the CEOs of OpenAI, Google DeepMind, and Anthropic came together to discuss the implications of achieving AGI. The conversation explored safety measures, societal transformation, governance frameworks, and how humanity can prepare for this transformative moment.",
+        highlights: [
+            "Consensus on AGI arriving within the next 5-10 years",
+            "Emphasis on alignment and safety as top priorities",
+            "Discussion on economic disruption and job transformation",
+            "Need for international cooperation on AGI governance",
+            "Debate on open vs. closed AGI development models"
+        ],
+        recordingLink: "https://www.weforum.org/videos/the-day-after-agi/"
+    },
+    {
+        id: 57,
+        date: "2026-01-20",
+        time: "15:15",
+        title: "Prosperity: Sovereign Yet Connected?",
+        speaker: "Panel of Finance Ministers and Central Bankers",
+        description: "Examining how nations can maintain economic sovereignty while participating in global trade and finance",
+        location: "Congress Centre - Economics Forum",
+        status: "completed",
+        summary: "Finance ministers and central bankers debated the tension between national economic sovereignty and global interconnectedness. The discussion covered supply chain resilience, currency independence, trade agreements, and how countries can protect their interests while benefiting from globalization.",
+        highlights: [
+            "Strategies for balancing national interests with global cooperation",
+            "Discussion on digital currencies and financial sovereignty",
+            "Supply chain diversification and resilience",
+            "Role of multilateral institutions in the new economic order"
+        ],
+        recordingLink: "https://www.weforum.org/videos/prosperity-sovereign-connected/"
+    },
+    {
+        id: 58,
+        date: "2026-01-20",
+        time: "15:30",
+        title: "Future of War",
+        speaker: "Military Leaders, Defense Ministers, and Security Experts",
+        description: "Analysis of how AI, cyber warfare, and new technologies are transforming military conflict",
+        location: "Congress Centre - Security Forum",
+        status: "completed",
+        summary: "Military and security leaders discussed the changing nature of warfare in an era of AI, autonomous systems, cyber attacks, and space-based assets. The session explored ethical considerations, international law, and how to maintain stability in an increasingly complex security landscape.",
+        highlights: [
+            "Impact of AI and autonomous weapons on modern warfare",
+            "Cybersecurity as a critical national defense issue",
+            "Space militarization and new domains of conflict",
+            "Need for updated international laws and conventions",
+            "Emphasis on de-escalation and conflict prevention"
+        ],
+        recordingLink: "https://www.weforum.org/videos/future-of-war/"
+    },
+    {
+        id: 59,
+        date: "2026-01-20",
+        time: "16:00",
+        title: "Where Can New Growth Come From?",
+        speaker: "Economists, Business Leaders, and Innovation Experts",
+        description: "Exploring new sources of economic growth in a mature global economy",
+        location: "Congress Centre - Growth Forum",
+        status: "completed",
+        summary: "With traditional growth engines slowing, this panel explored emerging opportunities: green technologies, AI productivity gains, space economy, biotech innovations, and new markets in developing economies. The discussion focused on sustainable and inclusive growth models.",
+        highlights: [
+            "Green energy transition as a major growth opportunity",
+            "AI-driven productivity improvements across sectors",
+            "Emerging markets and demographic dividends",
+            "Biotech and healthcare innovation potential",
+            "Space economy and new frontiers"
+        ],
+        recordingLink: "https://www.weforum.org/videos/new-growth-sources/"
+    },
+    {
+        id: 60,
+        date: "2026-01-20",
+        time: "16:00",
+        title: "AI Power Play—No Referees",
+        speaker: "Tech CEOs, Policy Makers, and Legal Experts",
+        description: "Examining the global competition for AI dominance and the lack of international governance",
+        location: "Congress Centre - AI Governance",
+        status: "completed",
+        summary: "This crucial session addressed the 'Wild West' state of AI development, with major powers racing ahead without agreed-upon rules. Discussions covered the AI arms race, data sovereignty, computing power concentration, and urgent need for international frameworks.",
+        highlights: [
+            "Competition between US, China, and EU for AI leadership",
+            "Concentration of AI capabilities in few companies",
+            "Lack of international regulatory frameworks",
+            "Calls for AI governance similar to nuclear treaties",
+            "Debate on open-source vs. proprietary AI development"
+        ],
+        recordingLink: "https://www.weforum.org/videos/ai-power-play/"
+    },
+    {
+        id: 61,
+        date: "2026-01-21",
+        time: "10:00",
+        title: "Special Address by António Guterres, Secretary-General, United Nations",
+        speaker: "António Guterres, Secretary-General, United Nations",
+        description: "The UN Secretary-General addresses global challenges and the role of international cooperation",
+        location: "Congress Hall - Main Stage",
+        status: "completed",
+        summary: "Secretary-General Guterres delivered a powerful address calling for renewed multilateralism and urgent action on climate change, global conflicts, and inequality. He emphasized the UN's role in facilitating dialogue and the need for reformed global governance structures.",
+        highlights: [
+            "Urgent call for climate action and fossil fuel phase-out",
+            "Emphasis on reforming global governance institutions",
+            "Appeal for peace in ongoing conflicts",
+            "Focus on sustainable development goals",
+            "Warning about growing global inequality"
+        ],
+        recordingLink: "https://www.weforum.org/videos/guterres-address-2026/"
+    },
+    {
+        id: 62,
+        date: "2026-01-21",
+        time: "10:30",
+        title: "Conversation with Jensen Huang, CEO of NVIDIA",
+        speaker: "Jensen Huang, Founder and CEO, NVIDIA",
+        description: "NVIDIA's CEO discusses the AI revolution, accelerated computing, and the future of technology",
+        location: "Congress Centre - Technology Stage",
+        status: "completed",
+        summary: "Jensen Huang captivated the audience with insights on NVIDIA's pivotal role in the AI revolution. He discussed accelerated computing, the future of GPUs, AI infrastructure, and how computing is transforming every industry from healthcare to manufacturing.",
+        highlights: [
+            "NVIDIA's vision for AI computing infrastructure",
+            "Discussion on next-generation chip architectures",
+            "AI's transformative impact across all industries",
+            "Democratization of AI through accessible computing",
+            "Future of autonomous systems and robotics"
+        ],
+        recordingLink: "https://www.weforum.org/videos/jensen-huang-2026/"
+    },
+    {
+        id: 63,
+        date: "2026-01-21",
+        time: "10:30",
+        title: "Hard Realities of Cyber Threats",
+        speaker: "Cybersecurity Experts, Government Officials, and Tech Leaders",
+        description: "Addressing the escalating challenges of cybersecurity in an interconnected world",
+        location: "Congress Centre - Security Forum",
+        status: "completed",
+        summary: "This session tackled the harsh realities of modern cyber threats: ransomware, state-sponsored attacks, AI-powered hacking, and infrastructure vulnerabilities. Experts discussed defense strategies, international cooperation, and the growing cyber insurance industry.",
+        highlights: [
+            "Rise of AI-powered cyber attacks",
+            "State-sponsored hacking and digital espionage",
+            "Critical infrastructure protection challenges",
+            "Need for international cyber norms",
+            "Growing importance of cyber resilience"
+        ],
+        recordingLink: "https://www.weforum.org/videos/cyber-threats-2026/"
+    },
+    {
+        id: 64,
+        date: "2026-01-21",
+        time: "14:30",
+        title: "Why Quantum Is Around the Corner and Why It Is Not",
+        speaker: "Quantum Computing Researchers and Industry Leaders",
+        description: "Balanced discussion on the promise and challenges of quantum computing",
+        location: "Congress Centre - Advanced Technology",
+        status: "completed",
+        summary: "Leading quantum researchers provided a realistic assessment of quantum computing's current state and future potential. The session explored breakthrough achievements, persistent challenges, practical applications, and timeline expectations for quantum advantage.",
+        highlights: [
+            "Recent breakthroughs in quantum error correction",
+            "Realistic timeline: 5-10 years for practical applications",
+            "Current limitations and technical challenges",
+            "Potential applications in cryptography, drug discovery, optimization",
+            "Need for quantum-ready cybersecurity"
+        ],
+        recordingLink: "https://www.weforum.org/videos/quantum-computing-2026/"
+    },
+    {
+        id: 65,
+        date: "2026-01-21",
+        time: "16:45",
+        title: "Regulating at the Speed of Code",
+        speaker: "Regulators, Tech CEOs, and Legal Scholars",
+        description: "How can regulation keep pace with rapidly evolving technology?",
+        location: "Congress Centre - Policy Forum",
+        status: "completed",
+        summary: "A critical examination of the growing gap between technological innovation and regulatory frameworks. The panel discussed agile regulation, sandbox approaches, international cooperation, and how to protect consumers while fostering innovation.",
+        highlights: [
+            "Challenge of regulating technologies that don't yet exist",
+            "Success stories of regulatory sandboxes",
+            "Need for international regulatory harmonization",
+            "Balancing innovation with consumer protection",
+            "Role of industry self-regulation"
+        ],
+        recordingLink: "https://www.weforum.org/videos/regulating-code-speed/"
+    },
+    {
+        id: 66,
+        date: "2026-01-22",
+        time: "08:00",
+        title: "Factories that Think",
+        speaker: "Manufacturing Leaders and Industry 4.0 Experts",
+        description: "Exploring AI-powered smart manufacturing and the future of production",
+        location: "Congress Centre - Industry Forum",
+        status: "completed",
+        summary: "Industry leaders showcased the transformation of manufacturing through AI, IoT, robotics, and digital twins. The session explored how intelligent factories are revolutionizing production, improving efficiency, and creating new business models.",
+        highlights: [
+            "AI-driven predictive maintenance and quality control",
+            "Digital twin technology for factory optimization",
+            "Collaborative robots (cobots) working alongside humans",
+            "Supply chain optimization through AI",
+            "Sustainability benefits of smart manufacturing"
+        ],
+        recordingLink: "https://www.weforum.org/videos/factories-think/"
+    },
+    {
+        id: 67,
+        date: "2026-01-22",
+        time: "08:30",
+        title: "Open Forum: Beyond Earth—The Next Space Race",
+        speaker: "Space Agency Leaders, Commercial Space Companies, Scientists",
+        description: "The new era of space exploration and commercialization",
+        location: "Open Forum Venue",
+        status: "completed",
+        summary: "An exciting discussion on humanity's expansion into space: lunar bases, Mars missions, space mining, satellite constellations, and space tourism. The session highlighted both the opportunities and challenges of the new space economy.",
+        highlights: [
+            "Plans for permanent lunar bases by 2030s",
+            "Commercial space stations and tourism",
+            "Space mining and resource extraction",
+            "International cooperation vs. competition in space",
+            "Environmental concerns about space debris"
+        ],
+        recordingLink: "https://www.weforum.org/videos/beyond-earth/"
+    },
+    {
+        id: 68,
+        date: "2026-01-22",
+        time: "09:15",
+        title: "Town Hall: Dilemmas Around Ethics in AI",
+        speaker: "AI Ethicists, Philosophers, Tech Leaders, Civil Society",
+        description: "Grappling with fundamental ethical questions raised by artificial intelligence",
+        location: "Open Forum - Town Hall",
+        status: "completed",
+        summary: "A thought-provoking town hall addressing AI ethics: bias and fairness, privacy, autonomous decision-making, accountability, and the future of human agency. The diverse panel explored different cultural perspectives on AI ethics.",
+        highlights: [
+            "Addressing bias and fairness in AI systems",
+            "Privacy concerns in the age of pervasive AI",
+            "Who is responsible when AI makes mistakes?",
+            "Preserving human agency and meaningful work",
+            "Cultural differences in AI ethics approaches"
+        ],
+        recordingLink: "https://www.weforum.org/videos/ai-ethics-townhall/"
+    },
+    {
+        id: 69,
+        date: "2026-01-22",
+        time: "13:30",
+        title: "An Honest Conversation on AI and Humanity",
+        speaker: "Yuval Noah Harari, AI Researchers, Humanists",
+        description: "Deep philosophical discussion on AI's impact on human civilization and what it means to be human",
+        location: "Congress Hall",
+        status: "completed",
+        summary: "Historian Yuval Noah Harari led a profound conversation about AI's implications for humanity. The discussion ranged from the nature of consciousness and intelligence to social structures, democracy, and human purpose in an AI-augmented world.",
+        highlights: [
+            "Questions about consciousness and sentience in AI",
+            "Impact of AI on human relationships and society",
+            "Democracy and governance in the age of AI",
+            "Finding meaning and purpose when AI exceeds human capabilities",
+            "The importance of wisdom versus intelligence"
+        ],
+        recordingLink: "https://www.weforum.org/videos/ai-humanity-conversation/"
+    },
+    {
+        id: 70,
+        date: "2026-01-23",
+        time: "08:00",
+        title: "Internet up for Grabs",
+        speaker: "Tech Policy Experts, Government Officials, Internet Pioneers",
+        description: "The battle for control of internet governance and the future of digital freedom",
+        location: "Congress Centre - Digital Forum",
+        status: "completed",
+        summary: "A critical session on internet governance challenges: data sovereignty, censorship, platform regulation, and the tension between national control and global connectivity. The panel debated different models for internet governance and their implications for freedom and innovation.",
+        highlights: [
+            "Fragmentation of the global internet",
+            "Data localization and sovereignty concerns",
+            "Platform regulation and content moderation",
+            "Digital authoritarianism vs. internet freedom",
+            "Future of internet governance institutions"
+        ],
+        recordingLink: "https://www.weforum.org/videos/internet-up-for-grabs/"
     }
 ];
 
